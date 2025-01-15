@@ -62,6 +62,8 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
+# Save the disparity map
+cv2.imwrite('.\\internet_img\\disparity.png', disparity2)
 
 # cap1.release()
 # cap2.release()
